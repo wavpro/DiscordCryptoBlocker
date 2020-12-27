@@ -3,6 +3,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client({ disableMentions: 'everyone' });
 
 client.once('ready', () => {
+	var membercount = client.guilds.cache.reduce((a, b) => a + b.memberCount, 0).toLocaleString('en');
 	console.log(`Logged in as ${client.user.username}`);
   client.user.setActivity(`${membercount} Users`, { type: 'WATCHING' });
 });
@@ -50,9 +51,6 @@ client.on('message', async message => {
     return;
   }
   }
-  }
-    if (message.content.toLowerCase() === 'ping') {
-    message.reply('Pong! The AI is running!');
   }
 });
 
