@@ -1,0 +1,16 @@
+{
+  "name": "DiscordCryptoBlocker",
+  "version": "1.0.0",
+  "description": "A discord.js package that automatically bans spambots, optimized for targeting crypto scammers, but could also work against other advertisement bots/selfbots.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Wavpro",
+  "license": "ISC",
+  "dependencies": {
+    "data-store": "^4.0.3",
+    "discord.js": "^12.5.1"
+  }
+}
